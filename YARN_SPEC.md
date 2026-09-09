@@ -11,8 +11,13 @@ pattern card.
 ## Running it
 
 ```
-python3 yarn_interpreter.py my_pattern.yarn
+python3 yarn_interpreter.py my_pattern.yarn    # run a pattern file
+python3 yarn_interpreter.py                    # interactive REPL
 ```
+
+In the REPL, each line you type is one row — it executes immediately and
+shows you what's left on the hook. `:stack`, `:markers`, and `:help` are
+REPL-only commands; `FO` (or Ctrl-D) fastens off and exits.
 
 ## Structure of a pattern
 
