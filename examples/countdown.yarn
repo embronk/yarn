@@ -1,0 +1,19 @@
+Materials: any scrap yarn, size H hook
+
+-- Recursion with a real base case: this is what makes Yarn Turing-complete.
+-- "hook" peeks the top of the loop stack without popping it, so the
+-- condition can be checked before deciding whether to recurse again.
+
+Special Stitch: countdown
+  -- base case: the 0 gets dropped and we stop
+  if hook = 0
+    sl st
+  otherwise
+    -- print the running count, then recurse on n - 1
+    inc, snip, ch 1, dec, countdown
+  end if.
+End special stitch.
+
+Row 1: ch 5
+Row 2: countdown
+FO

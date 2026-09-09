@@ -1,0 +1,9 @@
+Materials: any yarn, any hook
+
+Special Stitch: step (adds one loop, prints the running count)
+  inc, snip, sc
+End special stitch.
+
+Row 1: ch 1
+Row 2: *step* rep 10 times
+FO

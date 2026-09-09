@@ -1,12 +1,23 @@
 # Yarn 🧶
 
 A stack-based esoteric programming language where the code looks like a
-crochet pattern. Chains push values, stitches transform them, and `*...* rep
-N times` is your loop syntax.
+crochet pattern. Chains push values, stitches transform them, `*...* rep
+N times` is your loop syntax, `Special Stitch: ... End special stitch.`
+defines reusable functions, and `if hook = 0 ... otherwise ... end if.`
+gives it real conditionals — recursion with a base case, which makes Yarn
+Turing-complete.
 
 ```
-Row 1: ch 1
-Row 2: *inc, snip, sc* rep 10 times
+Special Stitch: countdown
+  if hook = 0
+    sl st
+  otherwise
+    inc, snip, ch 1, dec, countdown
+  end if.
+End special stitch.
+
+Row 1: ch 5
+Row 2: countdown
 FO
 ```
 
