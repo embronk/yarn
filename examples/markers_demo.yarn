@@ -1,0 +1,10 @@
+Materials: any scrap yarn, size doesn't matter
+
+-- "place marker" stashes the top of the stack under a name without
+-- consuming it -- just like clipping a stitch marker into a loop.
+-- "work into" a marker pushes a fresh copy of that value.
+
+Row 1: ch 42, place marker "star"
+Row 2: work into "star", pull through, work into "star", pull through, work into "star", pull through
+
+FO

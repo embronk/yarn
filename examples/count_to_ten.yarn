@@ -1,0 +1,9 @@
+Materials: worsted weight, size H hook
+
+-- start with 1 loop on the hook
+Row 1: ch 1
+
+-- each pass: duplicate the count, print one copy, increment the other
+Row 2: *inc, snip, sc* rep 10 times
+
+FO
